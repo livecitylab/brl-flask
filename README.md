@@ -4,6 +4,8 @@ This repository contains a [Flask](https://scrapy.org/) server providing endpoin
 
 ## How does it work?
 
+For each request, the server gets data from our GraphQL endpoint (https://brl-hasura.herokuapp.com/v1/graphql) and feeds it into the required functions. Some endpoints return JSON responses, while other return a [Plotly Dash](https://plotly.com/dash/) app, which is then embedded in the frontend inside a `<iframe>` tag.
+
 ## Installation
 
 To install this package, you'll have to fork it and install its dependencies with:
